@@ -1,0 +1,42 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'custom';
+
+.custom-dropdown-item:hover {
+    background-color: rgb(181, 181, 181);
+}
+.card-img-overlay-custom{
+    position: absolute;
+        width: 100%;
+        background-color: rgba(11, 2, 2, 0.7);
+        color: white;
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+
+}
+.container-custom {
+    width:200px;
+    height:300px;
+}
+
+.custom-image:hover{
+    transform: scale(1);
+}
+.container-custom:hover .card-img-overlay-custom {
+    opacity: 1;
+}
+.mybanner{
+    color:rgb(254, 254, 254); 
+    text-shadow: 0 0 5px #796dbc, 0 0 5px #8585a3;
+    font-family:monospace;
+}
