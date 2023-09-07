@@ -37,27 +37,20 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
-                        @else
-                            <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle mx-4" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-                                
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item custom-dropdown-item" href="{{ url('/profile/'.Auth::user()->id) }}">Profile</a>
-                                @if(Auth::user()->role) <a class="dropdown-item custom-dropdown-item" href="{{ url('/dashboard') }}">Dashboard</a>@endif
-                                    <a class="dropdown-item custom-dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                        @else<li class="nav-item">
+                                    <a class="nav-link" href="{{url('/profile/'. Auth::user()->id)}}">{{ __('Profile') }}</a>
+                                </li>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-5" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>  
                         @endguest
                     </ul>
                 </div>

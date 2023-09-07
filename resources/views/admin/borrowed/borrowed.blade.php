@@ -24,7 +24,7 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product price-->
-                                    <div class="text-decoration-line-through">Borrowed by {{$book->user->name}}</div>
+                                    <div>Borrowed by {{$book->user->name}}</div>
                                 </div>
                             </div> 
                             <!-- Product actions-->
