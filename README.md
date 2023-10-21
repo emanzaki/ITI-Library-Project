@@ -3,10 +3,10 @@
 
 ## About Project
 The project is about a Library divided into two modules
-● Student
-● Admin
+- Student
+- Admin
 
-Admin Module Features:
+### Admin Module Features:
 - Admin Dashboard
 - Admin can see (Borrowed books - All Books - All User ) 
 - Admin can add/update/ delete books
@@ -17,7 +17,7 @@ Admin Module Features:
 
 ---
 
-Students Module features
+### Students Module features
 - Students can register on the website.
 - Students can view all the books and their details.
 - Students can borrow a book.
